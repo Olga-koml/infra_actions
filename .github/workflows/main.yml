@@ -61,7 +61,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: username/infra:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/infra:latest
 
   deploy:
     runs-on: ubuntu-latest
